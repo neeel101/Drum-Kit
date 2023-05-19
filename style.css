@@ -1,0 +1,46 @@
+body, html{
+    margin:0;
+    height: 100%;
+}
+html{
+    background: url(../images/background.jpg) bottom center ;
+    background-size: cover;
+     background-repeat: no-repeat;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+.keys {
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+  
+}
+@media(max-width : 915px) {
+    .keys{flex-wrap:wrap;}
+}
+
+.key {
+    text-align:center;
+    padding:1em;
+    border: 5px solid black;
+    border-radius: 5px;
+    color:white;
+    transition: all 0.5s;
+    text-shadow: 0 0 5px black;
+    background: rgba(0,0,0,0.4);
+}
+
+.key kbd {
+    display:block;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 10px #ffc600;
+}
